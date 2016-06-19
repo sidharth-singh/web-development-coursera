@@ -1,0 +1,250 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** Header **/
+#header-nav {
+	background-color: #f6b319;
+	border: 0;
+	border-radius: 0;
+}
+
+#logo-img {
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant Name */
+     font-family: 'Lora', serif;
+     color: #557c3e;
+     font-size: 1.5em;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-shadow: 0px 0px 4px #fff;
+     margin-bottom: 0;
+     margin-top: 0;
+     line-height: .75;
+ }
+
+ .navbar-brand a:hover, .navbar-brand a:focus {
+ 	text-decoration: none;
+ }
+
+ .navbar-brand p { /* Kosher cert */
+ 	color: #000;
+ 	text-transform: uppercase;
+ 	font-size: .7em;
+ 	margin-top: 15px;
+ }
+
+ .navbar-brand p { /* Star-K */
+ 	vertical-align: middle;
+ }
+
+ #nav-list {
+ 	margin-top: 10px;
+ }
+
+ #nav-list a {
+ 	color: #951c49;
+ 	text-align: center;
+ }
+
+ #nav-list li div {
+ 	text-align: right;
+ }
+
+ #nav-list a:hover {
+ 	color: #3e91d4;
+ }
+
+ #nav-list a span {
+ 	font-size: 1.5em;
+ }
+
+ #phone {
+ 	margin-top: 5px;
+ }
+ #phone a {
+ 	text-align: right;
+ 	padding-right: 0;
+ 	padding-bottom: 0;
+ }
+ #phone div {
+ 	color: #557c3e;
+ 	text-align: right;
+ }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2px solid #61133f;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+/** Phone Bar for calling **/
+#phone-xs {
+	background: #f6b319;
+	text-align: center;
+	width: 80vw;
+	margin: 5px auto 0;
+	border-radius: 5px;
+}
+#phone-xs a {
+	color: #61122f;
+	font-size: 1.5em;
+}
+#phone-xs a:hover {
+	text-decoration: none;
+	color: #3e91d4;
+}
+#we-deliver-small {
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+/* End Header */
+
+/** Home Content **/
+.container .jumbotron {
+	padding: 0;
+	box-shadow: 0 0 50px #3f0c1f;
+	border-radius: 0.5em;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+	background: url(../images/menu-tile.jpg) no-repeat;
+	background-position: center;	
+}
+
+#specials-tile {
+	background: url(../images/specials-tile.jpg) no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	background: #000;
+	opacity: 0.77;
+	color: #fff;
+}
+#menu-tile, #specials-tile, #map-tile {
+	border-radius: 0.6em;
+}
+
+#menu-tile, #specials-tile {
+	width: 360px;
+	margin: 0 auto 15px auto;
+}
+
+
+
+/** Large Devices **/
+@media (min-width: 1200px) {
+	/* Main Body */
+	.container .jumbotron {
+		background: url(../images/jumbotron_1200.jpg);
+		height: 675px;
+	}
+
+}
+
+/** Medium Devices Only **/
+@media (min-width: 992px) and (max-width: 1199.5px) {
+	/* Header */
+	#logo-img {
+		background: url(../images/restaurant-logo_medium.png) no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+	/* End Header */
+
+	/* Main Body */
+	.container .jumbotron {
+		background: url(../images/jumbotron_992.jpg);
+		height: 558px;
+	}
+}
+
+/* Small Devices Only */
+@media (min-width: 768px) and (max-width: 991.5px) {
+	/* Main Body */
+	.container .jumbotron {
+		background: url(../images/jumbotron_768.jpg);
+		height: 432px;
+	}
+
+}
+
+/* Extra Small Devices Only */
+@media (max-width: 767.5px) {
+	/* Header */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {   /** Restaurant Name **/
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% viewport width */
+	}
+	
+	.navbar-brand p { /** Kosher Text **/
+		font-size: 0.6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img { /** Kosher Image **/
+		height: 20px;
+	}
+
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+}
+
+/** For very small devices **/
+@media (max-width: 479px) {
+	.navbar-header h1 {  /** Restaurant's Name **/
+		margin-top: 5px;
+		font-size: 6vw;
+	}
+
+	#menu-tile, #specials-tile {
+		width: 280px;
+
+	}
+}
