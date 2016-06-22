@@ -10,6 +10,7 @@ body {
 	background-color: #f6b319;
 	border: 0;
 	border-radius: 0;
+	box-shadow: 0 1px 5px 0px #000;
 }
 
 #logo-img {
@@ -101,6 +102,7 @@ body {
 	width: 80vw;
 	margin: 5px auto 0;
 	border-radius: 5px;
+	box-shadow: 0 0px 3px 0px #000;
 }
 #phone-xs a {
 	color: #61122f;
@@ -165,6 +167,138 @@ body {
 	width: 360px;
 	margin: 0 auto 15px auto;
 }
+
+/** Footer **/
+.panel-footer {
+	background-color: #222;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: none;
+}
+
+.panel-footer div.row {
+	margin-bottom: 30px;
+}
+
+#hours, #address {
+	line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+	color: #557c3e;
+	font-size: 0.8em;
+	line-height: 1.5;
+}
+
+#testimonials {
+	font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+.panel-footer {
+	box-shadow: 0 1px 5px 0px #000;
+}
+/** End of Home Page **/
+
+
+
+
+/** Menu Categories **/
+#menu-categories-title + div {
+	margin-bottom: 40px;
+}
+
+.category-tile {
+	position: relative;
+	margin: 0 auto 20px;
+	overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #ccc;
+}
+
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	opacity: 0.77;
+}
+
+#nav-list a.active-page {
+	color: #3e91d4;
+}
+
+/** End Menu Categories **/
+
+
+
+
+/*** Single Category Page ***/
+.menu-item-tile {
+	margin-bottom: 25px;
+}
+.menu-item-tile hr {
+	width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+	font-size: 0.7em;
+}
+
+.menu-item-tile .menu-item-photo {
+	position: relative;
+	max-width: 250px;
+	border: 2px solid #3f0c1f;
+	box-shadow: 0 1px 2px 0px #000;
+	padding: 0;
+	margin: 0 -15px 20px auto;
+}
+.menu-item-tile .menu-item-photo > div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #05a86b;
+	color: #fff;
+    border-radius: 10px;
+    width: 50px;
+    text-align: center;
+    box-shadow: 0 0px 0px 0px #000;
+}
+
+.menu-item-description {
+	padding-right: 30px;
+}
+.menu-item-title {
+	margin: 0px 0px 15px;
+}
+.menu-item-details {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+/** End Single Category page **/
+
+
 
 
 
@@ -234,6 +368,31 @@ body {
 		font-size: 1em;
 		margin-right: 5px;
 	}
+
+	/** Footer **/
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0; /** Already has the margin **/
+	}
+
+	.panel-footer section hr {
+		width: 50%;
+	}
+
+	.menu-item-tile .menu-item-photo {
+		margin-right: auto;
+	}
+	.menu-item-tile .menu-item-price {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.menu-item-description {
+		text-align: center;
+	}
 }
 
 /** For very small devices **/
@@ -246,5 +405,14 @@ body {
 	#menu-tile, #specials-tile {
 		width: 280px;
 
+	}
+
+	.col-xxs-12 {
+		width: 100%;
+		min-height: 1px;
+		float: left;
+		position: relative;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
