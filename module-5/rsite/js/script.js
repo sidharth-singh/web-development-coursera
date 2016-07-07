@@ -49,13 +49,13 @@ var insertProperty = function (string, propName, propValue) {
 var switchMenuToActive = function () {
   // Remove 'active' from home button
   var classes = document.querySelector("#navHomeButton").className;
-  classes = classes.replace(new RegExp("active", "g"), "");
+  classes = classes.replace(new RegExp("active-page", "g"), "");
   document.querySelector("#navHomeButton").className = classes;
 
   // Add 'active' to menu button if not already there
   classes = document.querySelector("#navMenuButton").className;
   if (classes.indexOf("active") == -1) {
-    classes += " active";
+    classes += " active-page";
     document.querySelector("#navMenuButton").className = classes;
   }
 };
